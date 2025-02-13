@@ -3,96 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project Name - Coming Soon</title>
+    <title>Hull University Interactive Map</title>
     <style>
-        * {
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
-        body {
-            font-family: 'Arial', sans-serif;
-            background: url('https://via.placeholder.com/1500') no-repeat center center fixed;
-            background-size: cover;
-            height: 100vh;
+
+        header {
+            background-color: #003366;
+            color: white;
+            padding: 20px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .content {
+            margin: 20px;
+            width: 80%;
+            max-width: 1200px;
+            text-align: center;
+        }
+
+        .map-placeholder {
+            width: 100%;
+            height: 400px;
+            background-color: #ddd;
             display: flex;
             justify-content: center;
             align-items: center;
-            color: #fff;
-            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+            color: #777;
+            font-size: 18px;
         }
-        .container {
-            text-align: center;
-            background: rgba(0, 0, 0, 0.7);
-            padding: 40px 60px;
-            border-radius: 15px;
-            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+
+        .navigation {
+            margin-top: 30px;
         }
-        h1 {
-            font-size: 3em;
-            margin-bottom: 20px;
-            animation: fadeIn 2s ease-in-out;
-        }
-        p {
-            font-size: 1.5em;
-            margin-bottom: 30px;
-            animation: fadeIn 2.5s ease-in-out;
-        }
-        .coming-soon {
-            font-size: 2em;
-            font-weight: bold;
-            color: #ff6347;
-            animation: bounce 1.5s infinite alternate;
-        }
-        .button {
-            padding: 15px 25px;
-            font-size: 1.2em;
-            background-color: #ff6347;
-            color: white;
-            border: none;
-            border-radius: 25px;
-            cursor: pointer;
+
+        .navigation a {
+            margin: 10px 20px;
+            color: #003366;
             text-decoration: none;
-            transition: background-color 0.3s ease;
+            font-weight: bold;
+            font-size: 18px;
         }
-        .button:hover {
-            background-color: #e55342;
-        }
+
         footer {
-            margin-top: 40px;
-            font-size: 1em;
-            color: #bbb;
-            animation: fadeIn 3s ease-in-out;
-        }
-
-        @keyframes fadeIn {
-            0% {
-                opacity: 0;
-            }
-            100% {
-                opacity: 1;
-            }
-        }
-
-        @keyframes bounce {
-            0% {
-                transform: translateY(0);
-            }
-            100% {
-                transform: translateY(-10px);
-            }
+            background-color: #003366;
+            color: white;
+            width: 100%;
+            padding: 15px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Project Name</h1>
-        <p class="coming-soon">Coming Soon</p>
-        <p>We're building something amazing. Stay tuned for updates!</p>
-        <a href="#" class="button">Notify Me</a>
-        <footer>
-            <p>&copy; 2025 Project Name. All rights reserved.</p>
-        </footer>
+
+    <header>
+        <h1>Hull University Interactive Map</h1>
+        <p>Your guide to navigating the campus with ease</p>
+    </header>
+
+    <div class="content">
+        <div class="map-placeholder">
+            <span>Interactive Map Coming Soon</span>
+        </div>
+
+        <div class="navigation">
+            <a href="#">Search</a>
+            <a href="#">Campus Buildings</a>
+            <a href="#">Departments</a>
+            <a href="#">Facilities</a>
+            <a href="#">Events</a>
+        </div>
     </div>
+
+    <footer>
+        <p>Hull University Interactive Map - Version 1.0</p>
+        <p><a href="mailto:contact@hulluni-map.com" style="color: white;">Contact Us</a> | <a href="#" style="color: white;">About the Project</a></p>
+    </footer>
+
 </body>
 </html>
